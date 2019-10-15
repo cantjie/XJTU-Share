@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Nov 17 21:01:41 2018
+# Process ID: 8544
+# Current directory: C:/Users/53194/Desktop/xxy (1)/xxy/project_56
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8924 C:\Users\53194\Desktop\xxy (1)\xxy\project_56\project_56.xpr
+# Log file: C:/Users/53194/Desktop/xxy (1)/xxy/project_56/vivado.log
+# Journal file: C:/Users/53194/Desktop/xxy (1)/xxy/project_56\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/53194/Desktop/xxy (1)/xxy/project_56/project_56.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/53194/Desktop/xxy (1)/xxy/project_56/project_56.srcs/sources_1/new/signalChecker.v} w ]
+add_files {{C:/Users/53194/Desktop/xxy (1)/xxy/project_56/project_56.srcs/sources_1/new/signalChecker.v}}
+close [ open {C:/Users/53194/Desktop/xxy (1)/xxy/project_56/project_56.srcs/sources_1/new/checker.v} w ]
+add_files {{C:/Users/53194/Desktop/xxy (1)/xxy/project_56/project_56.srcs/sources_1/new/checker.v}}
+close [ open {C:/Users/53194/Desktop/xxy (1)/xxy/project_56/project_56.srcs/sources_1/new/gfgt.v} w ]
+add_files {{C:/Users/53194/Desktop/xxy (1)/xxy/project_56/project_56.srcs/sources_1/new/gfgt.v}}

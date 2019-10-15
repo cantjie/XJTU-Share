@@ -1,0 +1,36 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/SignalExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignalExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/ShiftUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/RegMA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegMA
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/RegID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/RegFI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/RegEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/Multiplexer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/Multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/ALU2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/Add1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/pro9 10/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

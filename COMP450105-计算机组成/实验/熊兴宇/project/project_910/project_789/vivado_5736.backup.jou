@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Dec 20 17:31:19 2018
+# Process ID: 5736
+# Current directory: C:/Users/53194/Desktop/project_789
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8016 C:\Users\53194\Desktop\project_789\project_78.xpr
+# Log file: C:/Users/53194/Desktop/project_789/vivado.log
+# Journal file: C:/Users/53194/Desktop/project_789\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/53194/Desktop/project_789/project_78.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim

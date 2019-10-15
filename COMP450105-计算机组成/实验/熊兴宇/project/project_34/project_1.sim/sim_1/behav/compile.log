@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/PC/Desktop/组成实验/project_3/project_1.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/PC/Desktop/组成实验/project_3/project_1.srcs/sources_1/new/Sim_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/PC/Desktop/组成实验/project_3/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

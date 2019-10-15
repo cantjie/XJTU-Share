@@ -1,0 +1,506 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Dec 23 16:11:48 2018
+# Process ID: 3720
+# Current directory: C:/Users/53194/Desktop/project_789
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4660 C:\Users\53194\Desktop\project_789\project_78.xpr
+# Log file: C:/Users/53194/Desktop/project_789/vivado.log
+# Journal file: C:/Users/53194/Desktop/project_789\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/53194/Desktop/project_789/project_78.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_top.v w ]
+add_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_top.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Sim_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source top.tcl
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_top.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+write_schematic C:/Users/53194/Desktop/project_789/schematic.sch
+close_design
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+close [ open C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ALU2.v w ]
+add_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ALU2.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source top.tcl
+close_sim
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ALU.v
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_test.v
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/sim_ram.v
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ALU.v
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/test.v
+remove_files {C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/SimpleALU.v C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_simpleALU.v}
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/instruction_coder.v
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+add_files -norecurse C:/Users/53194/Desktop/project_789/instruction.txt
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source top.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+add_files -norecurse C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/test.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source test.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+add_files -norecurse C:/Users/53194/Desktop/project_789/instruction.txt
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/test.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+close [ open C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_multi.v w ]
+add_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_multi.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Sim_multi [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source Sim_multi.tcl
+close_sim
+launch_simulation
+source Sim_multi.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source top.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source top.tcl
+close_sim
+close [ open C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_cpu.v w ]
+add_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_cpu.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Sim_cpu [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+launch_simulation
+source Sim_cpu.tcl
+close_sim
+launch_simulation
+source Sim_cpu.tcl
+close_sim
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_cpu.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+close [ open C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/RegFI.v w ]
+add_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/RegFI.v
+update_compile_order -fileset sources_1
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_multi.v
+close [ open C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/RegID.v w ]
+add_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/RegID.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/RegEX.v w ]
+add_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/RegEX.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/RegMA.v w ]
+add_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/RegMA.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/RegWB.v w ]
+add_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/RegWB.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Multiplexer4.v w ]
+add_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Multiplexer4.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/RegWB.v
+file delete -force C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/RegWB.v
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+launch_simulation
+source top.tcl
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source top.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+synth_design -rtl -name rtl_1
+close_design
+set_property is_enabled false [get_files  C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/top.v]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+set_property is_enabled true [get_files  C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/top.v]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/instruction_coder.v
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_simpleALU.v C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v}
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ALU2.v
+add_files -norecurse C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/SimpleALU.v
+update_compile_order -fileset sources_1
+remove_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_simpleALU.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top instruction_coder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ConnectRamAndReg [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top instruction_coder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+add_files -norecurse C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_simpleALU.v
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+launch_simulation
+launch_simulation
+source instruction_coder.tcl
+close_sim
+add_files -norecurse {C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ALU.v C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v}
+update_compile_order -fileset sources_1
+close [ open C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ins.v w ]
+add_files C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ins.v
+update_compile_order -fileset sources_1

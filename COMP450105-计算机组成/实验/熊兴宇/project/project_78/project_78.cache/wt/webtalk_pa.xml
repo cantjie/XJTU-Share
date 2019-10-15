@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Thu Nov 08 22:08:01 2018">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="d2ff991cd2964be6a99283e616b2afce" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="13" type="JavaHandler"/>
+<property name="EditDelete" value="3" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="RunSchematic" value="2" type="JavaHandler"/>
+<property name="RunSynthesis" value="1" type="JavaHandler"/>
+<property name="SetTopNode" value="2" type="JavaHandler"/>
+<property name="ShowSource" value="2" type="JavaHandler"/>
+<property name="SimulationClose" value="1" type="JavaHandler"/>
+<property name="SimulationRun" value="5" type="JavaHandler"/>
+<property name="ZoomIn" value="19" type="JavaHandler"/>
+<property name="ZoomOut" value="55" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="ALU.v, 102, 345" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 105, 379" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 108, 159" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 11, 404" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 115, 402" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 119, 200" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 122, 306" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 122, 309" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 13, 408" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 132, 438" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 134, 380" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 135, 307" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 141, 485" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 143, 374" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 145, 374" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 148, 415" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 148, 453" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 151, 380" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 152, 302" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 152, 426" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 154, 413" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 155, 479" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 157, 372" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 158, 419" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 164, 94" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 166, 98" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 167, 245" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 167, 443" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 168, 299" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 168, 416" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 168, 468" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 171, 293" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 173, 352" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 174, 405" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 176, 427" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 177, 434" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 187, 271" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 189, 150" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 192, 527" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 197, 377" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 198, 506" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 204, 338" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 206, 244" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 206, 94" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 213, 339" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 215, 341" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 217, 446" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 219, 344" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 219, 376" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 223, 135" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 226, 464" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 227, 227" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 228, 410" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 237, 411" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 241, 231" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 241, 386" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 246, 128" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 246, 343" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 249, 272" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 253, 333" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 253, 414" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 256, 449" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 259, 238" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 259, 340" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 261, 374" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 262, 142" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 262, 408" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 265, 377" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 265, 406" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 269, 145" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 270, 423" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 271, 378" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 271, 513" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 274, 498" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 279, 146" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 281, 341" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 282, 246" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 283, 254" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 294, 452" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 295, 103" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 300, 376" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 303, 163" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 306, 377" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 310, 377, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 311, 377" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 318, 376" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 321, 447" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 322, 382" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 324, 215" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 333, 412" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 346, 236" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 354, 378" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 354, 387" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 357, 454" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 359, 424" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 364, 421" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 364, 446" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 376, 453" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 379, 382" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 400, 469" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 401, 381" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 406, 407" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 413, 342" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 415, 424" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 417, 336" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 421, 303" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 423, 483" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 427, 418" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 428, 414" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 437, 338" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 439, 376" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 440, 415" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 444, 266" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 448, 376" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 45, 235" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 454, 449" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 459, 296" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 465, 383" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 49, 235" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 495, 411" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 499, 412, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 505, 411" value="2" type="GuiResourceData"/>
+<property name="ALU.v, 506, 261" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 510, 418" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 511, 372" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 512, 414" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 512, 415" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 514, 414" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 514, 415" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 522, 381" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 525, 409" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 525, 415" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 529, 408" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 535, 401" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 553, 300" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 553, 446" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 58, 494" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 594, 422" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 624, 448" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 630, 382" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 647, 379" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 650, 342" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 669, 484" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 674, 417" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 680, 346" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 684, 394" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 692, 390" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 695, 356" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 697, 413" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 7, 523" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 714, 414" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 719, 454" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 737, 379" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 742, 381" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 748, 409" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 752, 379" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 755, 454" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 764, 484" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 767, 381" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 767, 455" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 780, 373" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 795, 373" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 878, 417" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 883, 418" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 9, 233" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 923, 424" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 929, 432" value="1" type="GuiResourceData"/>
+<property name="ALU.v, 95, 412" value="1" type="GuiResourceData"/>
+<property name="BACK,  Back" value="11" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 120, 406" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 123, 337" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 126, 353" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 130, 341" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 136, 459" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 176, 443" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 227, 535" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 235, 442" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 241, 554" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 615, 430" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 650, 463" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 656, 443" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 97, 443" value="1" type="GuiResourceData"/>
+<property name="ConnectRamAndReg.v, 99, 410" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="12" type="GuiResourceData"/>
+<property name="NEXT, Next " value="31" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, ALU" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, ConnectRamAndReg" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, Sim_ALI" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, Sim_ALU" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, Sim_Reg_group" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, adder4" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, reg_group" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, xor" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Add Sources..." value="14" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="18" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SET_AS_TOP, Set as Top" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="5" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 1" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, ALU (ALU.v" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, ConnectRamAndReg (ConnectRamAndReg.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Sim_ALU (Sim_ALU.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Sim_Reg_group (Sim_Reg_group.v" value="8" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, adder (adder.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, adder4 (adder4.v" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, ram (ram.v" value="8" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, reg_group (reg_group.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, sim_ram (sim_ram.v" value="16" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true" value="10" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true, false, false, false, true, false" value="12" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Sim_ALU (Sim_ALU.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Sim_Reg_group (Sim_Reg_group.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 6" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Open Elaborated Design, Schematic], 17, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Open Elaborated Design], 14" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="5" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, Create New Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NetlistTreeView_FLOORPLANNING, Floorplanning" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NetlistTreeView_NETLIST_TREE, [Sim_Reg_group, Nets (3" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.NetlistTreeView_NETLIST_TREE, [Sim_Reg_group], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NetlistTreeView_NETLIST_TREE, [Sim_Reg_group], 0, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NetlistTreeView_NETLIST_TREE, [sim_ram, Nets (3" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.NetlistTreeView_NETLIST_TREE, [sim_ram], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewProjectWizard_POST_SYNTHESIS_PROJECT_YOU_WILL_BE, Post-synthesis Project: You will be able to add sources, view device resources, run design analysis, planning and implementation." value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewProjectWizard_RTL_PROJECT_YOU_WILL_BE_ABLE_TO_ADD, RTL Project. You will be able to add sources, create block designs in IP Integrator, generate IP, run RTL analysis, synthesis, implementation, design planning and analysis." value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="5" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_SCHEMATIC, Schematic" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_BOARDS, Boards" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_BOARDS, PicoZed 7030 SOM + FMC Carrier V1 ; em.avnet.com ; c ; xc7z030sbg485-1 ; 485 ; 1.1 ; 265 ; 400 ; 157200 ; 0 ; 4 ; 150 ; 78600 ; 5 ; 1 ; 85 ; 0 ; 85 ; C ; 1.03 ; 0.97 ; 0.97 ; 4 ; 0 ; 0 ; 0 ; 0, 9, PicoZed 7030 SOM + FMC Carrier V1, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_BOARDS, PicoZed 7030 SOM + FMC Carrier V2 ; em.avnet.com ; c ; xc7z030sbg485-1 ; 485 ; 1.1 ; 265 ; 400 ; 157200 ; 0 ; 4 ; 150 ; 78600 ; 5 ; 1 ; 85 ; 0 ; 85 ; C ; 1.03 ; 0.97 ; 0.97 ; 4 ; 0 ; 0 ; 0 ; 0, 10, PicoZed 7030 SOM + FMC Carrier V2, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, project_78" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SaveProjectUtils_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SaveProjectUtils_SAVE, Save" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="8" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="8" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, VerilogSourceFile_small ; 1 ; ram.v ; xil_defaultlib ; C:/Users/PC/Desktop/xxy/project_56/project_56.srcs/sources_1/new, 0, C:/Users/PC/Desktop/xxy/project_56/project_56.srcs/sources_1/new, 4" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="17" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="6" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="16" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_OUT, Waveform Viewer_zoom_out" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 139, 169" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 265, 51" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 273, 55" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 282, 50" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 298, 136" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 298, 143" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 316, 140" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 355, 57" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 383, 104" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 392, 52" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 399, 59" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 403, 81" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 411, 790" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 498, 135" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 511, 118" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 607, 174" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 611, 102" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 625, 99" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 673, 29" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, raddr[5:0]], 4" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, waddr[5:0]], 3" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, wdata[31:0]], 1" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, wdata[31:0]], 5" value="3" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_DELETE, Remove File from Project..." value="3" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 135, 464" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 149, 511" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 172, 486" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 177, 522" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 181, 413" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 193, 388" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 205, 428" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 205, 452" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 213, 435" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 215, 478" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 226, 391" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 228, 379" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 298, 411" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 328, 518" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 347, 521" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 348, 519" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 665, 442" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 722, 511" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 89, 409" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 96, 332" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 98, 443" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 98, 511" value="1" type="GuiResourceData"/>
+<property name="Sim_ALU.v, 99, 521" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 1, 200" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 112, 169" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 118, 274" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 122, 126" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 122, 232" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 123, 231" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 125, 454" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 126, 264" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 129, 265" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 132, 265" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 132, 266" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 137, 299" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 142, 375" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 145, 308" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 145, 313" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 145, 527" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 146, 305" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 147, 307" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 159, 522" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 160, 345" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 165, 384" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 167, 310" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 171, 309" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 177, 512" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 177, 521" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 178, 259" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 179, 409" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 187, 416" value="2" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 189, 371" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 191, 415" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 195, 411" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 199, 202" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 207, 267" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 213, 450" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 226, 299" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 228, 454" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 229, 407" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 229, 526" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 232, 382" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 232, 457" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 233, 268" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 234, 219" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 234, 220" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 235, 377" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 235, 415" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 238, 275" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 238, 307" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 240, 408" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 242, 292" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 242, 304" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 245, 265" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 246, 310" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 250, 443" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 251, 527" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 253, 519" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 257, 378" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 258, 261" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 285, 463" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 288, 237" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 317, 356" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 319, 449" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 333, 300" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 340, 450" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 347, 235" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 375, 247" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 385, 459" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 48, 159" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 552, 346" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 589, 444" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 90, 379" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 94, 379, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Sim_Reg_group.v, 94, 383" value="1" type="GuiResourceData"/>
+<property name="adder.v, 177, 450" value="1" type="GuiResourceData"/>
+<property name="adder.v, 184, 444" value="1" type="GuiResourceData"/>
+<property name="adder.v, 187, 452" value="1" type="GuiResourceData"/>
+<property name="adder.v, 238, 462" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 109, 488" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 123, 520" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 125, 480" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 125, 513" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 130, 457" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 131, 339" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 138, 468" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 151, 524" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 160, 457" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 172, 519" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 184, 525" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 198, 485" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 201, 340" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 203, 455" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 208, 339" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 208, 383" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 208, 414" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 244, 482" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 249, 448" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 253, 523" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 254, 484" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 267, 303" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 298, 482" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 306, 450" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 308, 520" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 351, 448" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 369, 445" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 372, 481" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 373, 528" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 389, 485" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 401, 448" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 41, 450" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 410, 448" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 410, 519" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 412, 482" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 431, 488" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 473, 524" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 474, 452" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 483, 477" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 49, 493" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 51, 450" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 52, 494" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 535, 495" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 535, 518" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 561, 450" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 577, 424" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 588, 442" value="1" type="GuiResourceData"/>
+<property name="adder4.v, 858, 256" value="1" type="GuiResourceData"/>
+<property name="ram.v, 111, 370" value="1" type="GuiResourceData"/>
+<property name="ram.v, 117, 461" value="1" type="GuiResourceData"/>
+<property name="ram.v, 193, 205" value="1" type="GuiResourceData"/>
+<property name="ram.v, 422, 211" value="1" type="GuiResourceData"/>
+<property name="ram.v, 52, 56" value="1" type="GuiResourceData"/>
+<property name="ram.v, 583, 453" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 104, 162" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 106, 423" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 107, 126" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 107, 229" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 116, 461" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 118, 387" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 119, 340" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 120, 481" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 121, 444" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 122, 518" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 123, 407" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 131, 444" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 132, 413" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 133, 417" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 135, 201" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 137, 234" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 137, 518" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 140, 201" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 140, 87" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 147, 129" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 147, 498" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 152, 422" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 154, 263" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 161, 449" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 161, 452" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 166, 410" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 167, 336" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 168, 444" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 170, 450" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 174, 327" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 176, 335" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 178, 420" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 180, 483" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 181, 513" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 185, 417" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 189, 267" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 198, 382" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 198, 415" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 199, 340" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 199, 514" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 205, 370" value="2" type="GuiResourceData"/>
+<property name="reg_group.v, 223, 418" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 229, 451" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 234, 409" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 239, 188" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 242, 204" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 243, 482" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 244, 386" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 246, 382" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 250, 303" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 251, 413" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 251, 446" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 259, 402" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 261, 114" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 263, 479" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 266, 490" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 268, 410" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 275, 308" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 277, 311" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 279, 379" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 281, 127" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 281, 234" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 289, 237" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 290, 253" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 290, 340" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 294, 233" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 294, 290" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 302, 379" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 302, 409" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 306, 374" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 314, 296" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 315, 396" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 317, 311" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 318, 484" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 322, 309" value="2" type="GuiResourceData"/>
+<property name="reg_group.v, 323, 338" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 334, 304" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 335, 237" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 335, 520" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 337, 356" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 339, 372" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 348, 366" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 358, 478" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 363, 407" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 365, 458" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 366, 260" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 368, 236" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 369, 329" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 371, 195" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 372, 263" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 372, 272" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 373, 480" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 374, 305" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 385, 307" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 4, 368" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 400, 261" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 404, 153" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 409, 87" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 421, 303" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 422, 342" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 423, 299" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 460, 131" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 464, 201" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 466, 522" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 467, 389" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 477, 291" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 480, 421" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 490, 302" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 493, 269" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 497, 484" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 523, 416" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 71, 378" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 80, 445" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 83, 490" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 85, 443" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 88, 448" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 88, 88" value="1" type="GuiResourceData"/>
+<property name="reg_group.v, 96, 130" value="1" type="GuiResourceData"/>
+<property name="sim_ram.v, 315, 355" value="1" type="GuiResourceData"/>
+<property name="sim_ram.v, 46, 230" value="1" type="GuiResourceData"/>
+<property name="sim_ram.v, 48, 167" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="9" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="5" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

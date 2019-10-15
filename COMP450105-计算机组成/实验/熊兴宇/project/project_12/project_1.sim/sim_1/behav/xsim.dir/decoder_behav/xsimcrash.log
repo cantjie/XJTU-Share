@@ -1,0 +1,39 @@
+Unable to capture context for thread 8044 in process 7720, can not generate back trace
+Exception at PC 0x000007FEFD4EBDED
+Unable to capture context for thread 8004 in process 7720, can not generate back trace
+Exception at PC 0x000007FEB382BB93
+Printing stacktrace...
+
+Unable to capture context for thread 8004 in process 7720, can not generate back trace
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+Exception at PC 0x000007FEFD4EBDED
+[0]  [0x000007FEB382BB93]
+[1]  [0x000007FEB382BB93]
+[2]  [0x000007FEB382B4A1]
+[3]  [0x000007FEB382B3EF]
+[4]  [0x000007FEB38119FE]
+[5]  [0x000007FEB3810ED1]
+[6]  [0x000007FEB3810D76]
+[7]  [0x000007FEB37B79F6]
+[8]  [0x000007FEB37A7AFB]
+[9]  [0x000007FEB38CE90A]
+[10]  [0x000007FEB38E9F87]
+[11]  [0x000007FEB38EA05F]
+[12] (BaseThreadInitThunk+0xd) [0x00000000776459CD]
+[13] (RtlUserThreadStart+0x1d) [0x00000000777A385D]
+Done

@@ -1,0 +1,2720 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Dec 09 21:06:19 2018
+# Process ID: 4604
+# Current directory: C:/Users/53194/Desktop/project_789
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5152 C:\Users\53194\Desktop\project_789\project_78.xpr
+# Log file: C:/Users/53194/Desktop/project_789/vivado.log
+# Journal file: C:/Users/53194/Desktop/project_789\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/53194/Desktop/project_789/project_78.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'J:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 781.230 ; gain = 141.516
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_Reg_group' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_Reg_group_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_Reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_Reg_group_behav xil_defaultlib.Sim_Reg_group xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.Sim_Reg_group
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_Reg_group_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_Reg_group_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 21:09:10 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 804.762 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_Reg_group_behav -key {Behavioral:sim_1:Functional:Sim_Reg_group} -tclbatch {Sim_Reg_group.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_Reg_group.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_Reg_group_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 804.762 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 813.012 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_Reg_group' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_Reg_group_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_Reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_Reg_group_behav xil_defaultlib.Sim_Reg_group xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.Sim_Reg_group
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_Reg_group_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_Reg_group_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 21:14:40 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_Reg_group_behav -key {Behavioral:sim_1:Functional:Sim_Reg_group} -tclbatch {Sim_Reg_group.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_Reg_group.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_Reg_group_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 813.012 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_Reg_group' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_Reg_group_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_Reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_Reg_group_behav xil_defaultlib.Sim_Reg_group xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.Sim_Reg_group
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_Reg_group_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_Reg_group_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 21:17:49 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_Reg_group_behav -key {Behavioral:sim_1:Functional:Sim_Reg_group} -tclbatch {Sim_Reg_group.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_Reg_group.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_Reg_group_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 813.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_Reg_group' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_Reg_group_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_Reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_Reg_group_behav xil_defaultlib.Sim_Reg_group xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.Sim_Reg_group
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_Reg_group_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_Reg_group_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 21:26:12 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_Reg_group_behav -key {Behavioral:sim_1:Functional:Sim_Reg_group} -tclbatch {Sim_Reg_group.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_Reg_group.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_Reg_group_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 813.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_Reg_group' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_Reg_group_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_Reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_Reg_group_behav xil_defaultlib.Sim_Reg_group xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.Sim_Reg_group
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_Reg_group_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_Reg_group_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 21:26:46 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_Reg_group_behav -key {Behavioral:sim_1:Functional:Sim_Reg_group} -tclbatch {Sim_Reg_group.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_Reg_group.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_Reg_group_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 823.367 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 826.723 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_Reg_group' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_Reg_group_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_Reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_Reg_group_behav xil_defaultlib.Sim_Reg_group xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.Sim_Reg_group
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_Reg_group_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_Reg_group_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 22:18:01 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 826.723 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_Reg_group_behav -key {Behavioral:sim_1:Functional:Sim_Reg_group} -tclbatch {Sim_Reg_group.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_Reg_group.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_Reg_group_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:31 . Memory (MB): peak = 826.723 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_Reg_group' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_Reg_group_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_Reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_Reg_group_behav xil_defaultlib.Sim_Reg_group xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.Sim_Reg_group
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_Reg_group_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_Reg_group_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 22:21:56 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_Reg_group_behav -key {Behavioral:sim_1:Functional:Sim_Reg_group} -tclbatch {Sim_Reg_group.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_Reg_group.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_Reg_group_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 826.723 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 856.457 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_Reg_group' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_Reg_group_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_Reg_group
+ERROR: [VRFC 10-1412] syntax error near end [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v:56]
+ERROR: [VRFC 10-1040] module Sim_Reg_group ignored due to previous errors [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_Reg_group' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_Reg_group_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_Reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_Reg_group_behav xil_defaultlib.Sim_Reg_group xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.Sim_Reg_group
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_Reg_group_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_Reg_group_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 22:26:50 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_Reg_group_behav -key {Behavioral:sim_1:Functional:Sim_Reg_group} -tclbatch {Sim_Reg_group.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_Reg_group.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_Reg_group_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 856.457 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_Reg_group' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_Reg_group_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_Reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_Reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_Reg_group_behav xil_defaultlib.Sim_Reg_group xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.Sim_Reg_group
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_Reg_group_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_Reg_group_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 22:47:08 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_Reg_group_behav -key {Behavioral:sim_1:Functional:Sim_Reg_group} -tclbatch {Sim_Reg_group.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_Reg_group.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_Reg_group_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 866.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 866.004 ; gain = 0.000
+set_property top Sim_ConnectRamAndReg [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 1 for port rst [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 22:48:17 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 866.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 866.004 ; gain = 0.000
+set_property top sim_ram [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_ram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj sim_ram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/sim_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_ram
+INFO: [VRFC 10-2458] undeclared symbol test, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/sim_ram.v:30]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_ram_behav xil_defaultlib.sim_ram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port test [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/sim_ram.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.sim_ram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_ram_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/sim_ram_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 22:52:45 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_ram_behav -key {Behavioral:sim_1:Functional:sim_ram} -tclbatch {sim_ram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_ram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_ram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 866.004 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 866.004 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property top Sim_ConnectRamAndReg [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 866.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '23' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 1 for port rst [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 23:17:14 2018...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:02:24 . Memory (MB): peak = 866.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '144' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 866.004 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:03:17 . Memory (MB): peak = 866.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 866.004 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:35]
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-29] reg_group expects 7 arguments [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 866.004 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:35]
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 23:34:21 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 866.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 866.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 866.004 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:35]
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 09 23:38:34 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 866.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 866.004 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 866.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 866.004 ; gain = 0.000
+set_property top sim_ram [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_ram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj sim_ram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/sim_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_ram_behav xil_defaultlib.sim_ram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.sim_ram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_ram_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/sim_ram_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 00:37:46 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 866.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_ram_behav -key {Behavioral:sim_1:Functional:sim_ram} -tclbatch {sim_ram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_ram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_ram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 866.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 866.004 ; gain = 0.000
+set_property top Sim_ConnectRamAndReg [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:35]
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 00:42:10 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 866.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 866.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 868.004 ; gain = 0.000
+set_property top sim_ram [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_ram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj sim_ram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/sim_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_ram_behav xil_defaultlib.sim_ram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.sim_ram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_ram_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/sim_ram_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 07:58:18 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 868.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_ram_behav -key {Behavioral:sim_1:Functional:sim_ram} -tclbatch {sim_ram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_ram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_ram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 868.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_ram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj sim_ram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/sim_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_ram_behav xil_defaultlib.sim_ram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.sim_ram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_ram_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/sim_ram_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:00:10 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 868.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_ram_behav -key {Behavioral:sim_1:Functional:sim_ram} -tclbatch {sim_ram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_ram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 868.004 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_ram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 868.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 868.004 ; gain = 0.000
+set_property top Sim_ConnectRamAndReg [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:00:59 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 868.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 868.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 868.004 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:04:01 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 868.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 868.004 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 868.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 868.004 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:06:01 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 868.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 868.004 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 868.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 868.004 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:14:17 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 868.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 868.004 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 868.004 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 868.645 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:20:20 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 868.645 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 868.645 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 868.645 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 868.645 ; gain = 0.000
+set_property top sim_ram [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_ram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj sim_ram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/sim_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_ram_behav xil_defaultlib.sim_ram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.sim_ram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_ram_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/sim_ram_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:24:53 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 868.645 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_ram_behav -key {Behavioral:sim_1:Functional:sim_ram} -tclbatch {sim_ram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_ram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_ram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 868.645 ; gain = 0.000
+set_property top Sim_ConnectRamAndReg [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/sim_ram_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:26:15 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 868.645 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 880.316 ; gain = 11.672
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 893.027 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/sim_ram_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:27:47 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 893.027 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/sim_ram_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:33:21 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 90 ns  Iteration: 10000
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 893.027 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/sim_ram_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:37:42 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 90 ns  Iteration: 10000
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 893.027 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 893.027 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/sim_ram_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:38:47 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 893.027 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/sim_ram_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2458] undeclared symbol regin, assumed default net type wire [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port in [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:41:13 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 893.027 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/sim_ram_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:46:26 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 893.027 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 893.027 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/sim_ram_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:47:53 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 893.027 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/sim_ram_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_ConnectRamAndReg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_ConnectRamAndReg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_ConnectRamAndReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_ConnectRamAndReg_behav xil_defaultlib.Sim_ConnectRamAndReg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.reg_group
+Compiling module xil_defaultlib.ConnectRamAndReg
+Compiling module xil_defaultlib.Sim_ConnectRamAndReg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_ConnectRamAndReg_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_ConnectRamAndReg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 08:50:47 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_ConnectRamAndReg_behav -key {Behavioral:sim_1:Functional:Sim_ConnectRamAndReg} -tclbatch {Sim_ConnectRamAndReg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_ConnectRamAndReg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 893.027 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_ConnectRamAndReg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 893.027 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 893.027 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 893.027 ; gain = 0.000
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v" into library work [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v:1]
+[Mon Dec 10 08:53:33 2018] Launched synth_1...
+Run output will be captured here: C:/Users/53194/Desktop/project_789/project_78.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z030sbg485-1
+Top: Sim_ConnectRamAndReg
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:21:37 ; elapsed = 11:47:21 . Memory (MB): peak = 916.414 ; gain = 709.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Sim_ConnectRamAndReg' [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v:23]
+INFO: [Synth 8-638] synthesizing module 'ConnectRamAndReg' [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:23]
+INFO: [Synth 8-638] synthesizing module 'ram' [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ram' (1#1) [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_group' [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v:23]
+WARNING: [Synth 8-324] index 10 out of range [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v:39]
+WARNING: [Synth 8-324] index 11 out of range [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v:39]
+WARNING: [Synth 8-324] index 12 out of range [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v:39]
+WARNING: [Synth 8-324] index 13 out of range [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v:39]
+WARNING: [Synth 8-324] index 14 out of range [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v:39]
+WARNING: [Synth 8-324] index 15 out of range [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v:39]
+WARNING: [Synth 8-5788] Register dataout_reg in module reg_group is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v:45]
+INFO: [Synth 8-256] done synthesizing module 'reg_group' (2#1) [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/reg_group.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ConnectRamAndReg' (3#1) [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ConnectRamAndReg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Sim_ConnectRamAndReg' (4#1) [C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_ConnectRamAndReg.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:21:39 ; elapsed = 11:47:24 . Memory (MB): peak = 953.770 ; gain = 746.422
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:21:39 ; elapsed = 11:47:24 . Memory (MB): peak = 953.770 ; gain = 746.422
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z030sbg485-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:22:18 ; elapsed = 11:48:10 . Memory (MB): peak = 1309.965 ; gain = 1102.617
+12 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:00 . Memory (MB): peak = 1309.965 ; gain = 408.758
+set_property top sim_ram [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_ram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj sim_ram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/sim_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_ram_behav xil_defaultlib.sim_ram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.sim_ram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_ram_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/sim_ram_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 09:01:50 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1319.699 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_ram_behav -key {Behavioral:sim_1:Functional:sim_ram} -tclbatch {sim_ram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_ram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_ram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1319.699 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1324.379 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_ram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj sim_ram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/sim_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_ram_behav xil_defaultlib.sim_ram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.sim_ram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_ram_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/sim_ram_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 09:03:51 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1324.379 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_ram_behav -key {Behavioral:sim_1:Functional:sim_ram} -tclbatch {sim_ram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_ram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1324.379 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_ram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1324.379 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1324.379 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_ram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj sim_ram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/sim_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_ram_behav xil_defaultlib.sim_ram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.sim_ram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_ram_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/sim_ram_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 09:05:03 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1324.379 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_ram_behav -key {Behavioral:sim_1:Functional:sim_ram} -tclbatch {sim_ram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_ram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1324.379 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_ram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1324.379 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1326.074 ; gain = 0.000
+set_property top sim_ram [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+ERROR: [Common 17-53] User Exception: Unable to open design. No Verilog or VHDL sources found in project
+refresh_design
+ERROR: [Common 17-53] User Exception: Unable to open design. No Verilog or VHDL sources found in project
+set_property top Sim_simpleALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Sim_simpleALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Sim_simpleALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.srcs/sources_1/new/Sim_simpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_simpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 4c388791a4e240948a5554cd0b3617d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Sim_simpleALU_behav xil_defaultlib.Sim_simpleALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.Sim_simpleALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Sim_simpleALU_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav/xsim.dir/Sim_simpleALU_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 10 09:12:14 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1326.074 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/project_789/project_78.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Sim_simpleALU_behav -key {Behavioral:sim_1:Functional:Sim_simpleALU} -tclbatch {Sim_simpleALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Sim_simpleALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Sim_simpleALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1326.074 ; gain = 0.000
+refresh_design
+ERROR: [Common 17-53] User Exception: Unable to open design. No Verilog or VHDL sources found in project
+refresh_design
+ERROR: [Common 17-53] User Exception: Unable to open design. No Verilog or VHDL sources found in project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1326.613 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 10 09:17:43 2018...

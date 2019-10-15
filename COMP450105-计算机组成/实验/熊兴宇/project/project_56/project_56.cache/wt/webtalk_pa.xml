@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Sat Nov 17 21:47:47 2018">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="8b2c33f935804cbba7839b440f250d0c" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="13" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="EditUndo" value="7" type="JavaHandler"/>
+<property name="NewProject" value="2" type="JavaHandler"/>
+<property name="OpenProject" value="2" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
+<property name="RunSchematic" value="6" type="JavaHandler"/>
+<property name="SaveProjectAs" value="1" type="JavaHandler"/>
+<property name="SetTopNode" value="9" type="JavaHandler"/>
+<property name="ShowView" value="1" type="JavaHandler"/>
+<property name="SimulationClose" value="19" type="JavaHandler"/>
+<property name="SimulationRun" value="30" type="JavaHandler"/>
+<property name="ZoomIn" value="32" type="JavaHandler"/>
+<property name="ZoomOut" value="232" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FINISH, Finish" value="3" type="GuiResourceData"/>
+<property name="NEXT, Next " value="3" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_MESSAGES, [Synth 8-285] failed synthesizing module 'sim_checker' [C:/Users/53194/Desktop/computer organization experiment/xxy/project_56/project_56.srcs/sources_1/new/sim_checker.v:23], 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_MESSAGES, [Synth 8-285] failed synthesizing module 'sim_checker' [C:/Users/53194/Desktop/computer organization experiment/xxy/project_56/project_56.srcs/sources_1/new/sim_checker.v:23], 2, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="9" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, signalChecker" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, sim_checker" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Add Sources..." value="4" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="16" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SET_AS_TOP, Set as Top" value="5" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 6, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 6, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 5" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, signalChecker.v], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, signalChecker.v], 2, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, signalChecker.v], 2, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files], 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files], 1, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, signalChecker (signalChecker.v" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, sim_checker (sim_checker.v" value="18" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, sim_ram (sim_ram.v" value="8" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, sim_storage (sim_storage.v" value="7" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true, false, false, false, true, false" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, sim_checker (sim_checker.v" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, sim_ram (sim_ram.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, sim_storage (sim_storage.v" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 6" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 5" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Open Elaborated Design, Schematic], 17, false" value="18" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Open Elaborated Design], 14" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_OPEN_PROJECT, Open Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-285] failed synthesizing module 'signalChecker' [C:/Users/53194/Desktop/computer organization experiment/xxy/project_56/project_56.srcs/sources_1/new/signalChecker.v:23]. , [Synth 8-285] failed synthesizing module 'sim_checker' [C:/Users/53194/Desktop/computer organization experiment/xxy/project_56/project_56.srcs/sources_1/new/sim_checker.v:23]. ], 4, false" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-285] failed synthesizing module 'signalChecker' [C:/Users/53194/Desktop/computer organization experiment/xxy/project_56/project_56.srcs/sources_1/new/signalChecker.v:23]. ], 3" value="3" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-285] failed synthesizing module 'signalChecker' [C:/Users/53194/Desktop/computer organization experiment/xxy/project_56/project_56.srcs/sources_1/new/signalChecker.v:23]. ], 3, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-285] failed synthesizing module 'signalChecker' [C:/Users/53194/Desktop/computer organization experiment/xxy/project_56/project_56.srcs/sources_1/new/signalChecker.v:23]. ], 3, true" value="5" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-91] ambiguous clock in event control [C:/Users/53194/Desktop/computer organization experiment/xxy/project_56/project_56.srcs/sources_1/new/signalChecker.v:31]. ], 2, false" value="10" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, synth_design -rtl -name rtl_1. ], 1" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="3" type="GuiResourceData"/>
+<property name="PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, Also delete the project local file/directory from disk, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="3" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="15" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="10" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="6" type="GuiResourceData"/>
+<property name="RDIResource.ProgressDialog_BACKGROUND, Background" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 22, 79" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 273, 307" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 39, 82" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 42, 82" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 52, 81" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Untitled 1" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_DELETE, Remove File from Project..." value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 102, 186" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 102, 91" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 107, 163" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 108, 203" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 109, 195" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 111, 178" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 116, 282" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 139, 193" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 146, 279" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 149, 79" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 15, 65" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 151, 277" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 187, 195" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 19, 25" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 195, 146" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 219, 287" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 22, 164" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 22, 83" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 23, 140" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 23, 239" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 23, 87" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 240, 159" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 245, 165" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 245, 175" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 246, 331" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 255, 204" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 26, 211" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 261, 193" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 3, 65" value="2" type="GuiResourceData"/>
+<property name="signalChecker.v, 329, 238" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 355, 237" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 361, 237" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 386, 287" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 44, 160" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 44, 165" value="2" type="GuiResourceData"/>
+<property name="signalChecker.v, 47, 104" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 47, 163" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 47, 163, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 47, 181" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 49, 50" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 50, 165" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 67, 162" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 67, 165" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 71, 163" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 75, 239" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 76, 236" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 78, 89" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 79, 163" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 80, 164" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 83, 231" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 83, 291" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 83, 355" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 84, 156" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 84, 216" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 91, 163" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 95, 223" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 96, 147" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 96, 165" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 97, 118" value="1" type="GuiResourceData"/>
+<property name="signalChecker.v, 99, 87" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 106, 198" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 110, 298" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 116, 251" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 118, 291" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 118, 308" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 131, 306" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 159, 123" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 159, 256" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 187, 109" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 202, 223" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 221, 247" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 23, 163" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 23, 276" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 3, 105" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 32, 280" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 42, 243" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 53, 258" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 65, 331" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 83, 222" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 83, 289" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 85, 310" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 86, 272" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 87, 80" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 91, 312" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 91, 68" value="1" type="GuiResourceData"/>
+<property name="sim_checker.v, 95, 305" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="13" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="8" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

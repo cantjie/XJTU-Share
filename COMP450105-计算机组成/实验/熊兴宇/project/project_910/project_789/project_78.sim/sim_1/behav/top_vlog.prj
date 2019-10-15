@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/SignalExtension.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/ShiftUnit.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/RegMA.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/RegisterFile.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/RegID.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/RegFI.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/RegEX.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/ProgramCounter.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/Multiplexer4.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/Multiplexer.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/InstructionMemory.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/DataMemory.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/ControlUnit.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/ALUControl.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/ALU2.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/Add1.v"
+verilog xil_defaultlib  "../../../project_78.srcs/sources_1/new/top.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

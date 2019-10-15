@@ -1,0 +1,13 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 94c4ce6dbfa34ab6befa86b4e0c5c1c3 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_checker_behav xil_defaultlib.sim_checker xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.signalChecker
+Compiling module xil_defaultlib.sim_checker
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_checker_behav

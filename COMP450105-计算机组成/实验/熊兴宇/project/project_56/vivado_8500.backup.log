@@ -1,0 +1,396 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Nov 17 20:02:32 2018
+# Process ID: 8500
+# Current directory: C:/Users/53194/Desktop/xxy (1)/xxy/project_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12896 C:\Users\53194\Desktop\xxy (1)\xxy\project_5\project_56.xpr
+# Log file: C:/Users/53194/Desktop/xxy (1)/xxy/project_5/vivado.log
+# Journal file: C:/Users/53194/Desktop/xxy (1)/xxy/project_5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/PC/Desktop/xxy/project_56' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for em.avnet.com:picozed_7030_fmc2:part0:1.1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'J:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 811.125 ; gain = 132.090
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_storage' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav'
+"xvlog -m64 --relax -prj sim_storage_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/storage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module storage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_storage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 94c4ce6dbfa34ab6befa86b4e0c5c1c3 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_storage_behav xil_defaultlib.sim_storage xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 6 for port addr [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.storage
+Compiling module xil_defaultlib.sim_storage
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_storage_behav
+/xxy/project_5/project_56.sim/sim_1/behav/xsim.dir/sim_storage_behav/webtalk/xsim_webtalk.tcl was unexpected at this time.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_storage_behav -key {Behavioral:sim_1:Functional:sim_storage} -tclbatch {sim_storage.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_storage.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_storage_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 813.367 ; gain = 0.355
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_storage' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav'
+"xvlog -m64 --relax -prj sim_storage_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/storage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module storage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_storage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 94c4ce6dbfa34ab6befa86b4e0c5c1c3 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_storage_behav xil_defaultlib.sim_storage xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 6 for port addr [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.storage
+Compiling module xil_defaultlib.sim_storage
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_storage_behav
+/xxy/project_5/project_56.sim/sim_1/behav/xsim.dir/sim_storage_behav/webtalk/xsim_webtalk.tcl was unexpected at this time.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_storage_behav -key {Behavioral:sim_1:Functional:sim_storage} -tclbatch {sim_storage.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_storage.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_storage_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 855.844 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_storage' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav'
+"xvlog -m64 --relax -prj sim_storage_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/storage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module storage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_storage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 94c4ce6dbfa34ab6befa86b4e0c5c1c3 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_storage_behav xil_defaultlib.sim_storage xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 6 for port addr [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.storage
+Compiling module xil_defaultlib.sim_storage
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_storage_behav
+/xxy/project_5/project_56.sim/sim_1/behav/xsim.dir/sim_storage_behav/webtalk/xsim_webtalk.tcl was unexpected at this time.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_storage_behav -key {Behavioral:sim_1:Functional:sim_storage} -tclbatch {sim_storage.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_storage.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_storage_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 855.844 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z030sbg485-1
+Top: sim_ram
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:38 ; elapsed = 00:22:49 . Memory (MB): peak = 901.809 ; gain = 694.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sim_ram' [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_ram.v:23]
+INFO: [Synth 8-638] synthesizing module 'ram' [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/ram.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ram' (1#1) [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/ram.v:23]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_ram.v:74]
+INFO: [Synth 8-256] done synthesizing module 'sim_ram' (2#1) [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_ram.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:40 ; elapsed = 00:22:50 . Memory (MB): peak = 924.168 ; gain = 717.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:40 ; elapsed = 00:22:50 . Memory (MB): peak = 924.168 ; gain = 717.035
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z030sbg485-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:03:03 ; elapsed = 00:23:04 . Memory (MB): peak = 1281.582 ; gain = 1074.449
+8 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 1281.582 ; gain = 425.738
+close_design
+set_property top sim_storage [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z030sbg485-1
+Top: sim_storage
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:23 ; elapsed = 00:24:07 . Memory (MB): peak = 1283.516 ; gain = 1076.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sim_storage' [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:23]
+INFO: [Synth 8-638] synthesizing module 'storage' [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/storage.v:23]
+INFO: [Synth 8-638] synthesizing module 'ram' [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/ram.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ram' (1#1) [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/ram.v:23]
+INFO: [Synth 8-256] done synthesizing module 'storage' (2#1) [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/storage.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'addr' does not match port width (6) of module 'storage' [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:30]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:125]
+WARNING: [Synth 8-3848] Net addr in module/entity sim_storage does not have driver. [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:27]
+INFO: [Synth 8-256] done synthesizing module 'sim_storage' (3#1) [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:23]
+WARNING: [Synth 8-3331] design storage has unconnected port addr[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:23 ; elapsed = 00:24:08 . Memory (MB): peak = 1283.516 ; gain = 1076.383
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin mystorage:addr[4] to constant 0 [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:30]
+WARNING: [Synth 8-3295] tying undriven pin mystorage:addr[3] to constant 0 [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:30]
+WARNING: [Synth 8-3295] tying undriven pin mystorage:addr[2] to constant 0 [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:30]
+WARNING: [Synth 8-3295] tying undriven pin mystorage:addr[1] to constant 0 [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:30]
+WARNING: [Synth 8-3295] tying undriven pin mystorage:addr[0] to constant 0 [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_storage.v:30]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:24 ; elapsed = 00:24:08 . Memory (MB): peak = 1283.516 ; gain = 1076.383
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:03:38 ; elapsed = 00:24:14 . Memory (MB): peak = 1366.488 ; gain = 1159.355
+9 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1366.488 ; gain = 82.973
+close_design
+set_property top sim_ram [current_fileset]
+update_compile_order -fileset sources_1
+set_property top sim_ram [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'sim_ram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav'
+"xvlog -m64 --relax -prj sim_ram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: J:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 94c4ce6dbfa34ab6befa86b4e0c5c1c3 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_ram_behav xil_defaultlib.sim_ram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.sim_ram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_ram_behav
+/xxy/project_5/project_56.sim/sim_1/behav/xsim.dir/sim_ram_behav/webtalk/xsim_webtalk.tcl was unexpected at this time.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_ram_behav -key {Behavioral:sim_1:Functional:sim_ram} -tclbatch {sim_ram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source sim_ram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_ram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1366.488 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z030sbg485-1
+Top: sim_ram
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:10 ; elapsed = 00:27:13 . Memory (MB): peak = 1366.488 ; gain = 1159.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sim_ram' [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_ram.v:23]
+INFO: [Synth 8-638] synthesizing module 'ram' [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/ram.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ram' (1#1) [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/ram.v:23]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_ram.v:74]
+INFO: [Synth 8-256] done synthesizing module 'sim_ram' (2#1) [C:/Users/53194/Desktop/xxy (1)/xxy/project_5/project_56.srcs/sources_1/new/sim_ram.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:10 ; elapsed = 00:27:14 . Memory (MB): peak = 1366.488 ; gain = 1159.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:11 ; elapsed = 00:27:14 . Memory (MB): peak = 1366.488 ; gain = 1159.355
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:04:19 ; elapsed = 00:27:18 . Memory (MB): peak = 1366.488 ; gain = 1159.355
+7 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1366.488 ; gain = 0.000
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 17 21:01:26 2018...

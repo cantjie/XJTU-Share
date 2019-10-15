@@ -1,0 +1,26 @@
+
+*** Running vivado
+    with args -log Sim_Trigger.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Sim_Trigger.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Sim_Trigger.tcl -notrace
+Command: synth_design -top Sim_Trigger -part xc7z030sbg485-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6812 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 312.059 ; gain = 104.301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Sim_Trigger' [C:/Users/PC/Desktop/组成实验/project_3/project_1.srcs/sources_1/new/Sim_Trigger.v:23]
+INFO: [Synth 8-638] synthesizing module 'Trigger' [C:/Users/PC/Desktop/组成实验/project_3/project_1.srcs/sources_1/new/Trigger.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Trigger' (1#1) [C:/Users/PC/Desktop/组成实验/project_3/project_1.srcs/sources_1/new/Trigger.v:23]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/PC/Desktop/组成实验/project_3/project_1.srcs/sources_1/new/Sim_Trigger.v:50]
+INFO: [Synth 8-256] done synthesizing module 'Sim_Trigger' (2#1) [C:/Users/PC/Desktop/组成实验/project_3/project_1.srcs/sources_1/new/Sim_Trigger.v:23]
+TclStackFree: incorrect freePtr. Call out of sequence?

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/computer organization experiment/xxy/project_56/project_56.srcs/sources_1/new/signalChecker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signalChecker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/computer organization experiment/xxy/project_56/project_56.srcs/sources_1/new/sim_checker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_checker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/53194/Desktop/computer organization experiment/xxy/project_56/project_56.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,8 @@
+reg[4]写入dm[1+1]
+dm[1+1]写入reg[2]
+reg[0]+reg[5]
+reg{0]?<reg[5]
+if(reg[2]==reg[4])pc=pc+4
+//
+ram[4]写入reg[2]
+待机
