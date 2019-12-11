@@ -1,3 +1,4 @@
+![](logo.png)
 # 西安交通大学课程资料共享计划
 [![](https://img.shields.io/github/watchers/cantjie/XJTU-Share.svg?style=flat)](https://github.com/cantjie/XJTU-Share/watchers)
 [![](https://img.shields.io/github/stars/cantjie/XJTU-Share.svg?style=flat)](https://github.com/cantjie/XJTU-Share/stargazers)
@@ -84,7 +85,7 @@
 - [浙江大学课程攻略共享计划](https://github.com/QSCTech/zju-icicles)
 - [北京大学课程资料民间整理](https://github.com/lib-pku/libpku)
 - [北大计算机课程大作业](https://github.com/tongtzeho/PKUCourse)
-- [清华大学计算机系课程攻略](https://github.com/cantjie/XJTU-Share)
+- [清华大学计算机系课程攻略](https://github.com/PKUanonym/REKCARC-TSC-UHT)
 - [东南大学课程共享计划](https://github.com/zjdx1998/seucourseshare)
 - [中国科学技术大学计算机学院课程资源](https://github.com/USTC-Resource/USTC-Course)
 - [西安交通大学课程资料共享计划](https://github.com/cantjie/XJTU-Share)
