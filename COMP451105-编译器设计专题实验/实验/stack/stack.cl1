@@ -1,9 +1,0 @@
-Class Silly{
-	copy():SELF_TYPE{self};
-	};
-Class Sally inherits Silly{};
-	class Main {
-	          x: Sally<- (new Sally).copy();
-	          main(): Sally{x};
-		  
-	         };
