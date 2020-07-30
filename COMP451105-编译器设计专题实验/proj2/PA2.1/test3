@@ -1,0 +1,14 @@
+program   p
+type t = integer;
+var  v1:t;
+     v2:char;
+begin
+   read(v1);
+   v1:=v1*10;
+   v1:="d";
+   v2:='a';
+   write(v1); { 这里是
+注释
+}
+end.
+
