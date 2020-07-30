@@ -34,19 +34,19 @@
 修改终端提示符
 --------------
 
-![修改终端用户名](src/ps1.png){width="13cm"}
+![修改终端用户名](src/ps1.png)
 
 使用方法1会对用户名进行永久的修改，使用方法2是临时修改。
 
 安装flex和bison
 ---------------
 
-![修改终端用户名](src/installFlex.png){width="13cm"}
+![修改终端用户名](src/installFlex.png)
 
 编译hello world程序
 -------------------
 
-![stack.cl 运行结果](src/stackCl.png){width="13cm"}
+![stack.cl 运行结果](src/stackCl.png)
 
 **stack.cl**内容:
 
@@ -74,7 +74,7 @@
 编写stack.cl,满足堆栈机
 -----------------------
 
-![demo.cl 运行结果](src/demoClRun.png){width="13cm"}
+![demo.cl 运行结果](src/demoClRun.png)
 
 **demo.cl**部分内容
 
@@ -178,7 +178,7 @@
 使用cool编写斐波那契数列或者其他程序。
 --------------------------------------
 
-![斐波那契数列运行结果](src/fib.png){width="13cm"}
+![斐波那契数列运行结果](src/fib.png)
 
     class Main inherits IO {
     
@@ -248,7 +248,7 @@
 实现打印输入文字的行数，列数和字数
 ----------------------------------
 
-![实验结果](src/proj21.png){width="13cm"}
+![实验结果](src/proj21.png)
 
     %{
     #include <stdio.h>
@@ -282,7 +282,7 @@
 统计给定程序文件的行数，列数和字数
 ----------------------------------
 
-![实验结果](src/proj22.png){width="13cm"}
+![实验结果](src/proj22.png)
 
     %{
     #include <stdio.h>
@@ -315,7 +315,7 @@
 统计给定程序的字数，如统计一个程序中if的个数
 --------------------------------------------
 
-![实验结果](src/proj23.png){width="13cm"}
+![实验结果](src/proj23.png)
 
     %{
     #include <stdio.h>
@@ -339,7 +339,7 @@
 实现C/C++ 块/行注释的处理
 -------------------------
 
-![实验结果](src/proj24.png){width="13cm"}
+![实验结果](src/proj24.png)
 
     %{
     #include <stdio.h>
@@ -368,7 +368,7 @@
 实现多重入口
 ------------
 
-![实验结果](src/proj25.png){width="13cm"}
+![实验结果](src/proj25.png)
 
     %{
     /* 功能：
@@ -431,11 +431,11 @@
 cool.flex
 ---------
 
-![实验结果](src/proj41.png){width="13cm"}
+![实验结果](src/proj41.png)
 
-![实验结果](src/proj43.png){width="13cm"}
+![实验结果](src/proj43.png)
 
-![实验结果](src/proj42.png){width="13cm"}
+![实验结果](src/proj42.png)
 
 语法分析 上
 ===========
@@ -457,9 +457,9 @@ cool.flex
 
 综合实验1～4的要求，完成了具有多位数处理、负数识别、加减乘除运算、括号处理、浮点数处理的计算器。
 
-![实验结果](src/proj51.png){width="13cm"}
+![实验结果](src/proj51.png)
 
-![实验结果](src/proj52.png){width="13cm"}
+![实验结果](src/proj52.png)
 
     /* calc.l */
     /* recognize tokens for the calculator and print them out */
@@ -561,7 +561,7 @@ cool.flex
 
 2.  分析表达式语法关系，求值。
 
-![实验结果](src/proj61.png){width="13cm"}
+![实验结果](src/proj61.png)
 
     /* calc.l */
     /* recognize tokens for the calculator and print them out */
