@@ -70,7 +70,8 @@ extern int cool_yydebug;
     ASSIGN = 280,
     NOT = 281,
     LE = 282,
-    ERROR = 283
+    ERROR = 283,
+    FLAG = 285
   };
 #endif
 /* Tokens.  */
@@ -100,30 +101,31 @@ extern int cool_yydebug;
 #define NOT 281
 #define LE 282
 #define ERROR 283
+#define FLAG 285
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 
 union YYSTYPE
 {
-#line 28 "cool.y" /* yacc.c:1909  */
+#line 26 "cool.y" /* yacc.c:1909  */
 
-  Boolean boolean;
-  Symbol symbol;
-  Program program;
-  Class_ class_;
-  Classes classes;
-  Feature feature;
-  Features features;
-  Formal formal;
-  Formals formals;
-  Case case_;
-  Cases cases;
-  Expression expression;
-  Expressions expressions;
-  char *error_msg;
+	Boolean boolean;
+	Symbol symbol;
+	Program program;
+	Class_ class_;
+	Classes classes;
+	Feature feature;
+	Features features;
+	Formal formal;
+	Formals formals;
+	Case case_;
+	Cases cases;
+	Expression expression;
+	Expressions expressions;
+	char *error_msg;
 
-#line 127 "cool.tab.h" /* yacc.c:1909  */
+#line 129 "cool.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;
@@ -131,9 +133,23 @@ typedef union YYSTYPE YYSTYPE;
 # define YYSTYPE_IS_DECLARED 1
 #endif
 
+/* Location type.  */
+#if ! defined YYLTYPE && ! defined YYLTYPE_IS_DECLARED
+typedef struct YYLTYPE YYLTYPE;
+struct YYLTYPE
+{
+  int first_line;
+  int first_column;
+  int last_line;
+  int last_column;
+};
+# define YYLTYPE_IS_DECLARED 1
+# define YYLTYPE_IS_TRIVIAL 1
+#endif
+
 
 extern YYSTYPE cool_yylval;
-
+extern YYLTYPE cool_yylloc;
 int cool_yyparse (void);
 
 #endif /* !YY_COOL_YY_COOL_TAB_H_INCLUDED  */

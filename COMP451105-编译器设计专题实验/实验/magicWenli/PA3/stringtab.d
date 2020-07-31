@@ -1,7 +1,4 @@
-stringtab.o stringtab.d : stringtab.cc /home/vita/cool/include/PA3/copyright.h \
- /home/vita/cool/include/PA3/stringtab_functions.h \
- /home/vita/cool/include/PA3/copyright.h \
- /home/vita/cool/include/PA3/cool-io.h \
- /home/vita/cool/include/PA3/stringtab.h \
- /home/vita/cool/include/PA3/list.h \
- /home/vita/cool/include/PA3/stringtab.h
+stringtab.o stringtab.d : stringtab.cc ../../include/PA3/copyright.h \
+ ../../include/PA3/stringtab_functions.h ../../include/PA3/copyright.h \
+ ../../include/PA3/cool-io.h ../../include/PA3/stringtab.h \
+ ../../include/PA3/list.h ../../include/PA3/stringtab.h
