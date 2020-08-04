@@ -1,0 +1,95 @@
+#9
+_program
+  #9
+  _class
+    Main
+    IO
+    "testlet.cl"
+    (
+    #2
+    _attr
+      x
+      Int
+      #2
+      _int
+        1
+      : _no_type
+    #3
+    _attr
+      y
+      Int
+      #3
+      _int
+        2
+      : _no_type
+    #4
+    _attr
+      z
+      Int
+      #4
+      _no_expr
+      : _no_type
+    #5
+    _attr
+      w
+      Int
+      #5
+      _no_expr
+      : _no_type
+    #8
+    _method
+      main
+      Object
+      #8
+      _assign
+        w
+        #7
+        _block
+          #7
+          _let
+            a
+            Int
+            #7
+            _int
+              1
+            : _no_type
+            #7
+            _let
+              b
+              Int
+              #7
+              _int
+                2
+              : _no_type
+              #7
+              _let
+                c
+                Int
+                #7
+                _int
+                  3
+                : _no_type
+                #7
+                _plus
+                  #7
+                  _plus
+                    #7
+                    _object
+                      a
+                    : _no_type
+                    #7
+                    _object
+                      b
+                    : _no_type
+                  : _no_type
+                  #7
+                  _object
+                    c
+                  : _no_type
+                : _no_type
+              : _no_type
+            : _no_type
+          : _no_type
+        : _no_type
+      : _no_type
+    )
