@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<script type="text/javascript">
+  function btnClick() {
+    let _str = document.getElementById("textfield").value;
+    document.getElementById("textfield2").value = _str
+  }
+</script>
+
+<body>
+  <h1>字符串复制</h1>
+  <form id="form1" name="form1" method="post" action="">
+    输入：<input type="text" name="textfield" id="textfield" /><br />
+    输出：<input type="text" name="textfield2" id="textfield2" /><br />
+    <input type="button" name="button" id="button" value="开始" onclick="btnClick()" />
+    <input type="reset" name="button2" id="button2" value="清空" />
+    <br />
+  </form>
+</body>
+</html>

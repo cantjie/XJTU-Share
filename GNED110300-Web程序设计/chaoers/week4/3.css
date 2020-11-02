@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+}
+h2:nth-child(odd) {
+  font-family: SimHei;
+  color: red;
+  text-align: left;
+}
+h2:nth-child(even) {
+  font-family: KaiTi;
+  color: green;
+  text-align: right;
+}

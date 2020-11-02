@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script type="text/javascript">
+  function btnClick() {
+    let num = document.getElementById("Text1").value
+    let sum = num
+    while(num > 1){
+      num --
+      sum *= num
+    }
+    document.getElementById("Text2").value = sum
+  }
+</script>
+
+<body>
+  <h1>计算阶乘</h1>
+  <form>
+    整数<input id="Text1" type="text" /><br />
+    结果<input id="Text2" type="text" /><br />
+    <input id="Button1" type="button" value="计算" onclick="btnClick()" />　
+    <input type="reset" name="button2" id="button2" value="清空" />
+  </form>
+</body>
+
+</html>

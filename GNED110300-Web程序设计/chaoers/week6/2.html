@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script type="text/javascript">
+  function btnClick() {
+    let num = document.getElementById("Text1").value
+    document.getElementById("Text2").value = num % 2 == 0 ? '不是素数' : '是素数'
+  }
+</script>
+
+<body>
+  <h1>判断素数</h1>
+  <form>
+    整数<input id="Text1" type="text" /><br />
+    结果<input id="Text2" type="text" /><br />
+    <input id="Button1" type="button" value="计算" onclick="btnClick()" />　
+    <input type="reset" name="button2" id="button2" value="清空" />
+  </form>
+</body>
+
+</html>
