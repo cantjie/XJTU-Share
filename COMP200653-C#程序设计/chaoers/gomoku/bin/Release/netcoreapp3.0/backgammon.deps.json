@@ -1,0 +1,123 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "backgammon/1.0.0": {
+        "dependencies": {
+          "MaterialDesignThemes": "3.0.1",
+          "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.9.6",
+          "ShowMeTheXAML": "1.0.12"
+        },
+        "runtime": {
+          "backgammon.dll": {}
+        }
+      },
+      "MaterialDesignColors/1.2.2": {
+        "runtime": {
+          "lib/netcoreapp3.0/MaterialDesignColors.dll": {
+            "assemblyVersion": "1.2.2.920",
+            "fileVersion": "1.2.2.920"
+          }
+        }
+      },
+      "MaterialDesignThemes/3.0.1": {
+        "dependencies": {
+          "MaterialDesignColors": "1.2.2"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/MaterialDesignThemes.Wpf.dll": {
+            "assemblyVersion": "3.0.1.920",
+            "fileVersion": "3.0.1.920"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.6": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.VersionCheckAnalyzer": "2.9.6",
+          "Microsoft.CodeQuality.Analyzers": "2.9.6",
+          "Microsoft.NetCore.Analyzers": "2.9.6",
+          "Microsoft.NetFramework.Analyzers": "2.9.6"
+        }
+      },
+      "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.6": {},
+      "Microsoft.CodeQuality.Analyzers/2.9.6": {},
+      "Microsoft.NetCore.Analyzers/2.9.6": {},
+      "Microsoft.NetFramework.Analyzers/2.9.6": {},
+      "ShowMeTheXAML/1.0.12": {
+        "runtime": {
+          "lib/net45/ShowMeTheXAML.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "backgammon/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MaterialDesignColors/1.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RGy0WREmcn4YcygOlIn4TnvmuVGEM4h7s6Ydw8KQu9igjZPvZm07iXLVgBzNiOtTXVqsGpQ6i7L6aZEXGetWKg==",
+      "path": "materialdesigncolors/1.2.2",
+      "hashPath": "materialdesigncolors.1.2.2.nupkg.sha512"
+    },
+    "MaterialDesignThemes/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EVUgzVjGfJ1Ube9r11iKttOU2cCpYcDAe6kkP5Z1nvytEfBrQFB2DeTEiu51E8Jv+7kN+Jmkx3zwJAr9nYaiHQ==",
+      "path": "materialdesignthemes/3.0.1",
+      "hashPath": "materialdesignthemes.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GBZV6P8u3uIXYrlapvbpaaaB5LpF3hk+I2ThIcoVyENr8krNOovFyJhi6FQHgnxd0XLPj9J9Nt35iuqwVe/XJw==",
+      "path": "microsoft.codeanalysis.fxcopanalyzers/2.9.6",
+      "hashPath": "microsoft.codeanalysis.fxcopanalyzers.2.9.6.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q5rRN0+9TJsfsXaGKnzDjGkUZ4Rd8ZKmpSND1j49jsmLacCspp4ZaJ31nJn76B/W0qrb4GkEBxKtj3U9lo2gqg==",
+      "path": "microsoft.codeanalysis.versioncheckanalyzer/2.9.6",
+      "hashPath": "microsoft.codeanalysis.versioncheckanalyzer.2.9.6.nupkg.sha512"
+    },
+    "Microsoft.CodeQuality.Analyzers/2.9.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jND04w/FPgfBYKkLLnosmvgHs8NMpMvQ7LQqyiCjMlKOM+MT6edgvTU0vAAowxGuLGceC6pjJm0kUVkG9qT3CQ==",
+      "path": "microsoft.codequality.analyzers/2.9.6",
+      "hashPath": "microsoft.codequality.analyzers.2.9.6.nupkg.sha512"
+    },
+    "Microsoft.NetCore.Analyzers/2.9.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YPcQ+gCt66btt9jNHNi4vrRK6AAP7EIO17quwUeHLUw7vhc6q18r2RYVTLKQvOQuOXs1UEYHArENpppwFP4MLA==",
+      "path": "microsoft.netcore.analyzers/2.9.6",
+      "hashPath": "microsoft.netcore.analyzers.2.9.6.nupkg.sha512"
+    },
+    "Microsoft.NetFramework.Analyzers/2.9.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8VyWe53rtUkgJFAkbCZY5KT2t1tEmRrdK1Z+zbyRlzoKVEHyMs0+WNBeJ8d2YB/NjXaYAlaVG2CGZFnQUrwY6A==",
+      "path": "microsoft.netframework.analyzers/2.9.6",
+      "hashPath": "microsoft.netframework.analyzers.2.9.6.nupkg.sha512"
+    },
+    "ShowMeTheXAML/1.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oPR4alJeT7mYJ+ocSoQvu7JoQKntF1eAI7WaohQDOX2b2U4dS27fCUyjgxO/aK5z6MzsqsgokS68S/qAxh8dxg==",
+      "path": "showmethexaml/1.0.12",
+      "hashPath": "showmethexaml.1.0.12.nupkg.sha512"
+    }
+  }
+}

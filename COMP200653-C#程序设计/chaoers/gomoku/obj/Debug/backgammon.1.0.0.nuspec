@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>backgammon</id>
+    <version>1.0.0</version>
+    <authors>backgammon</authors>
+    <owners>backgammon</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="MaterialDesignThemes" version="3.0.1" exclude="Build,Analyzers" />
+        <dependency id="ShowMeTheXAML" version="1.0.12" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework=".NETCoreApp3.1">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\git\github\mine\backgammon\backgammon\bin\Debug\netcoreapp3.1\backgammon.runtimeconfig.json" target="lib\netcoreapp3.1\backgammon.runtimeconfig.json" />
+    <file src="D:\git\github\mine\backgammon\backgammon\bin\Debug\netcoreapp3.1\backgammon.dll" target="lib\netcoreapp3.1\backgammon.dll" />
+  </files>
+</package>
