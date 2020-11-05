@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>style</title>
+</head>
+<style>
+  div{
+    color: blue;
+  }
+  body > div:first-child > sup {
+    color: red;
+  }
+  body > div:last-child > span:first-child {
+    font-weight: bold;
+  }
+  body > div:last-child > span:nth-child(2) {
+    font-style: italic;
+    color: red;
+  }
+  body > div:last-child > span:last-child {
+    text-decoration: underline;
+    color: green;
+  }
+</style>
+<body>
+  <div>
+    <span>ax</span>
+    <sup>2</sup>
+    <span>+bx+c=0</span>
+  </div>
+  <div>
+    <span>X</span>
+    <sup>2</sup>
+    <sub>1</sub>
+    <span>+X</span>
+    <sup>2</sup>
+    <sub>2</sub>
+    <span>=Y</span>
+    <sup>2</sup>
+  </div>
+  <div>
+    <span>Web</span>
+    <span>程序</span>
+    <span>设计</span>
+  </div>
+</body>
+</html>

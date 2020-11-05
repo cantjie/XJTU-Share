@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script type="text/javascript">
+  function btnClick() {
+    var sum = 0
+    var i = 0
+    do {
+      i++
+      sum += i
+    } while (i < 100);
+    document.getElementById("Text1").value = `1-100的和为${sum}`
+  }
+</script>
+
+<body>
+  <h1>计算1-100的和</h1>
+  <form>
+    <input id="Text1" type="text" /><br />
+    <input id="Button1" type="button" value="计算" onclick="btnClick()" />　
+  </form>
+</body>
+
+</html>

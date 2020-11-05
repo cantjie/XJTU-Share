@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\10946\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.4.0</NuGetToolVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.netframework.analyzers\2.9.6\build\Microsoft.NetFramework.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.netframework.analyzers\2.9.6\build\Microsoft.NetFramework.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.netcore.analyzers\2.9.6\build\Microsoft.NetCore.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.netcore.analyzers\2.9.6\build\Microsoft.NetCore.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codequality.analyzers\2.9.6\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codequality.analyzers\2.9.6\build\Microsoft.CodeQuality.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.versioncheckanalyzer\2.9.6\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.versioncheckanalyzer\2.9.6\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.fxcopanalyzers\2.9.6\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.fxcopanalyzers\2.9.6\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_NetFramework_Analyzers Condition=" '$(PkgMicrosoft_NetFramework_Analyzers)' == '' ">C:\Users\10946\.nuget\packages\microsoft.netframework.analyzers\2.9.6</PkgMicrosoft_NetFramework_Analyzers>
+    <PkgMicrosoft_NetCore_Analyzers Condition=" '$(PkgMicrosoft_NetCore_Analyzers)' == '' ">C:\Users\10946\.nuget\packages\microsoft.netcore.analyzers\2.9.6</PkgMicrosoft_NetCore_Analyzers>
+    <PkgMicrosoft_CodeQuality_Analyzers Condition=" '$(PkgMicrosoft_CodeQuality_Analyzers)' == '' ">C:\Users\10946\.nuget\packages\microsoft.codequality.analyzers\2.9.6</PkgMicrosoft_CodeQuality_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_VersionCheckAnalyzer Condition=" '$(PkgMicrosoft_CodeAnalysis_VersionCheckAnalyzer)' == '' ">C:\Users\10946\.nuget\packages\microsoft.codeanalysis.versioncheckanalyzer\2.9.6</PkgMicrosoft_CodeAnalysis_VersionCheckAnalyzer>
+    <PkgMicrosoft_CodeAnalysis_FxCopAnalyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_FxCopAnalyzers)' == '' ">C:\Users\10946\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\2.9.6</PkgMicrosoft_CodeAnalysis_FxCopAnalyzers>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script type="text/javascript">
+  function btnClick() {
+    var r = parseFloat(document.getElementById("Text1").value);
+    var x = document.getElementById("Text2");
+    x.value = 2 * Math.PI * r;
+    var y = document.getElementById("Text3");
+    y.value = Math.PI * r * r;
+  }
+</script>
+
+<body>
+  <h1>圆的面积和周长</h1>
+  <form>
+    半径：<input id="Text1" type="text" /><br />
+    周长：<input id="Text2" type="text" /><br />
+    面积：<input id="Text3" type="text" /><br />
+    <input id="Button1" type="button" value="计算" onclick="btnClick()" />　
+    <input id="Reset1" type="reset" value="重置" />
+  </form>
+</body>
+
+</html>
