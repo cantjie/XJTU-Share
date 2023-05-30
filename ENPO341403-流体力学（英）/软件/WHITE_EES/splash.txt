@@ -1,0 +1,11 @@
+Click "Continue" to Accept the Following Terms of Agreement:
+
+1. McGraw-Hill licenses and authorizes you to use the software specified below only on a microcomputer located within your own facilities.
+
+2. You will abide by the Copyright Law of the United States. The law provides you with the right to make only one back-up copy. It prohibits you from making any additional copies, except as expressly provided by McGraw-Hill. In the event that the software is protected against copying in such a way that it cannot be duplicated, McGraw-Hill will provide you with one back-up copy at minimal cost or no charge.
+
+3. You will not prepare derivative works based on the software because that also is not permitted under the Copyright Law. For example, you cannot prepare an alternative hardware version or format based on the existing software.
+
+4. If you have a problem with the operation of our software or believe it is defective, contact your nearest McGraw-Hill Book Company office about securing a replacement. We cannot, however, offer free replacement of software damaged through normal wear and tear, or lost while in your possession. Nor does McGraw-Hill warrant that the software will satisfy your requirements, that the operation of the software will be uninterrupted or error-free, or that the program defects in the software can be corrected. Except as described in this agreement, software is distributed "as is" without any warranties of any kind, either express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose or use.
+
+5. Additional right and benefits may come with the specific software package you have purchased. Consult the support materials that come with this program, or contact the nearest McGraw-Hill Book Company office in your area.

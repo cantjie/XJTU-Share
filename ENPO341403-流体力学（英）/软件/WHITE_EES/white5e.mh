@@ -1,0 +1,9 @@
+SETUP_EES.exe
+- - White, Fluid Mechanics, 5/e
+--Sample Executable Cookie (This text is not necessary as part of the cookie)
+--The first line is the file to launch. (It can be .exe or .html and should be in the same folder as the Autorun.exe file)
+--No additional lines are necessary in this cookie, although some could be added and 'checked' for validity (i.e. version #, etc)
+--If no .mh 'cookie' exists, the text and graphics in the splash.txt and splash.jpg files will be displayed on every launch.
+--With no .mh 'cookie' file, the autorun.exe file will then launch the first .exe or index.html file it finds.
+--The cookie can be named anything, as long as it has a .mh extension.
+--The cookie is stored in the PC Windows/WinNT directory or the MAC default system drive directory.
