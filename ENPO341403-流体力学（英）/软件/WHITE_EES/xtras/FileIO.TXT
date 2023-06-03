@@ -1,0 +1,280 @@
+FileIO Xtra for Macromedia Authorware 6.0
+Copyright 2001 Macromedia, Inc.
+
+
+FileIO provides a set of functions allowing users of Macromedia Authorware 6.0 to programmatically access files using scripting.
+
+
+
+
+Using FileIO
+============
+
+As an Xtra the FileIO Xtra must be in your application's Xtras folder.
+
+Each instance of FileIO can reference a single open file. If multiple files are to be opened simultaneously, a new instance of FileIO is required for each opened file. A single instance can be used to open multiple files, as long as the file is closed before a new file is opened. To create a new instance use NewObject, defined below. To dispose of an instance, set the instance variable to 0. All functions that read from or write to the file must be called after the file has been opened using openFile. If a new file is to be opened using the same instance, the old file must first be closed using closeFile. Files can be opened in three different modes: Read, Write and Read/Write. When writing to a file, the contents of the file after the current position are overwritten.
+
+Example Script:
+
+ -- Create an instance of FileIO
+ myFile := NewObject("fileio")
+
+ -- Display an "open" dialog and return the file name to Authorware
+ myFileName := CallObject(myFile, "displayOpen")
+
+ -- Open the file
+ CallObject(myFile, "openFile", myFileName, 1)
+
+ -- Read the file and return a string to Authorware
+ theFile := CallObject(myFile, "readFile")
+
+ -- Close the file
+ CallObject(myFile, "closeFile")
+
+ -- Dispose of the instance
+ myFile := 0
+
+
+In this example, a new instance was created and stored in the variable myFile. Next, a call to displayOpen is used to display an open dialog to allow a file to be selected. The file name is returned as a fully qualified path string to Authorware. The file is then opened in read-only mode, the contents of the file are read, and the file is closed. Lastly, the instance is disposed.
+
+There is also an Authorware Show Me (xtraio.a6p) which demonstrates how to use the Xtra. It can be found in the Show Mes installed with Authorware 6.
+
+
+
+
+Known Problems
+==============
+
+The FileIO Xtra cannot use a net-based file when supplied with a URL for the file name. It is limited to accessing files available via file systems mounted on the local system.
+
+The displaySave function does not directly inform Authorware whether a user is replacing an existing file. A workaround is to attempt to create the file using createFile and check the error code for a "File Already Exists" error.
+
+
+
+
+Function Reference
+==================
+
+
+closeFile
+
+CallObject(object, "closeFile")
+
+Closes a file that has been previously opened using openFile.
+
+
+
+createFile
+
+CallObject(object, "createFile", "fileName")
+
+Creates a file. The fileName must be either a fileName to be created in the current directory, or a fully qualified path and fileName. Relative paths are not supported. After creating the new file, the file must be opened before it can be written to.
+
+
+
+delete
+
+CallObject(object, "delete")
+
+Deletes the currently opened file.  The file must be open to use this function.
+
+
+
+displayOpen
+
+CallObject(object, "displayOpen")
+
+Displays a platform specific "open" dialog allowing a user to select a file. Returns a fully qualified path and fileName to Authorware. The setFilterMask function can be used to control what file types are displayed in the dialog.
+
+
+
+displaySave
+
+CallObject(object, "displaySave", "title", "defaultFileName")
+
+Displays a platform specific "save" dialog allowing a user to specify a file. Returns a fully qualified path and fileName to Authorware. The setFilterMask function can be used to control what file types are displayed in the dialog. The title and defaultFileName parameters allow you to specify a default filename to be displayed, as well as title text for the save dialog. 
+
+
+
+error
+
+CallObject(object, "error", status) 
+
+Returns a readable error string. A numeric error code is passed in as the third argument. (Also refer to the 'status' function.) The errors returned can be any of the following:
+
+ "OK"
+ "Memory allocation failure"
+ "File directory full"
+ "Volume full"
+ "Volume not found"
+ "I/O Error"
+ "Bad file name"
+ "File not open"
+ "Too many files open"
+ "File not found"
+ "No such drive"
+ "No disk in drive"
+ "Directory not found"
+ "Instance has an open file"
+ "File already exists"
+ "File is opened read-only"
+ "File is opened write-only"
+ "Unknown error"
+
+
+
+fileName
+
+CallObject(object, "fileName")
+
+Returns the file name string of the current open file.  The file must be open use this function.
+
+
+
+getFinderInfo
+
+CallObject(object, "getFinderInfo")
+
+Returns the Type and Creator of the current file as a string. This function does nothing when used under Windows.  The file must be open to use this function.
+
+
+
+getLength
+
+CallObject(object, "getLength")
+
+Gets the length of the currently opened file. Returned as an integer. The file must be open to use this function. The value returned is the length of the file in bytes.
+
+
+
+getOSDirectory
+
+getOSDirectory()
+
+A function that returns the full path to either the Windows directory, or the System Folder depending on which OS is currently being used. Does not require a child instance to call.
+
+
+
+getPosition
+
+CallObject(object, "getPosition")
+
+Gets the file position of the current open file. Returned as an integer. The file must be open to use this function. 
+
+
+
+NewObject
+
+NewObject("fileio")
+
+This is called to create a new instance of FileIO. It returns an instance variable used to reference the instance.
+
+
+
+openFile
+
+CallObject(object, "openFile", "fileName", mode)
+
+Opens the named file. This call must be used before any read/write operations can take place. The filename can be either a fully qualified path and filename, or a relative filename. The openMode parameter specifies whether to open the file in Read, Write or Read Write mode. Valid Flags are: 0 Read/Write, 1 Read, 2 Write.
+
+
+
+readChar
+
+CallObject(object, "readChar")
+
+Reads the character (either single or double-byte) at the current position and then increments the position. The character is returned to Authorware as a string. The file must be open in read or read/write mode to use this function. 
+
+
+
+readFile
+
+CallObject(object, "readFile") 
+
+Reads from the current position to the end of the file and returns the file to Authorware as a string.  The file must be open in read or read/write mode to use this function.
+
+
+
+readLine
+
+CallObject(object, "readLine")
+
+Reads from the current position up to and including the next Return, increments the position, and returns the string to Authorware.  The file must be open in read or read/write mode to use this function. 
+
+
+
+readToken
+
+CallObject(object, "readToken", "skip", "break")
+
+Reads the next 'token' starting at the current position. Characters matching the 'skip' parameter are "skipped" and the file is read until 'break' is encountered. The file must be open in read or read/write mode to use this function. This function will read double-byte tokens as long as the skip and break are single-byte characters. It will not detect double-byte skip or break characters.
+
+
+
+readWord
+
+CallObject(object, "readWord")
+
+Reads the next word starting at the current position.  The file must be open in read or read/write mode to use this function. 
+
+
+
+setFilterMask
+
+CallObject(object, "setFilterMask", "mask")
+
+Sets the filter mask used by calls to displayOpen and displaySave. The filter mask determines what files to show when displaying an "open" or "save" dialog. The third parameter is a string representing the filter mask to set.
+
+On Windows, this is a comma-separated string of file types and associated extensions (e.g. "All Files,*.*,Text Files,*.TXT"), and a string of types on the Macintosh (e.g. "TEXTPICT"). On Windows, the filter mask string is limited to 256 characters.
+
+On the Macintosh, you are limited to four four-character types.  When a new instance of FileIO is created, the filter masks defaults to all files. To reset the filter mask to display all files after it has been set, just pass in an empty string, e.g. CallObject(object, "setFilterMask", "").
+
+
+
+setFinderInfo
+
+CallObject(object, "setFinderInfo", "attributes")
+
+Sets the Type and Creator of the current file. The string takes the form of a space-separated set of TYPE and CREATOR codes (e.g. "TEXT TTXT"). This function does nothing when used under Windows.  The file must be open to use this function.
+
+
+
+setPosition
+
+CallObject(object, "setPosition", position)
+
+Sets the file position of the current open file. The file must be open to use this function.
+
+
+
+status
+
+CallObject(object, "status")
+
+Returns the error code returned by the last function called. The value is returned as an integer. (Also refer to the 'error' function.)
+
+
+
+version
+
+CallParentObject("fileio", "version")
+
+Returns FileIO version and build information. Useful when filing bug reports, or determining installed version while authoring. No practical use beyond this.
+
+
+
+writeChar
+
+CallObject(object, "writeChar", "theChar")
+
+Writes a single character to the file at the current position. The file must be open in write or read/write mode to use this function.
+
+
+
+writeString
+
+CallObject(object, "writeString", "theString")
+
+Writes a string to the file at the current position. The file must be open in write or read/write mode to use this function.
+
+===
