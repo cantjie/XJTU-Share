@@ -141,4 +141,5 @@
 - [中山大学课程资料分享](https://github.com/sysuexam/SYSU-Exam)
 - [南京大学课程复习资料](https://github.com/idealclover/NJU-Review-Materials)
 - [郑州大学课程复习资料](https://github.com/CooperNiu/ZZU-Courses-Resource)
-- [东北大学机器人课程攻略 共享计划](https://github.com/mywisdomfly/NEU-RSE-Courses) |  [目录索引网站](https://mywisdomfly.github.io/NEU-RSE-Courses/)
+- [东北大学机器人课程攻略 共享计划](https://github.com/mywisdomfly/NEU-RSE-Courses)
+- [西安交通大学自动化专业课程资料分享](https://github.com/rongkunxue/XJTU-Automation-share)
